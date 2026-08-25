@@ -181,6 +181,15 @@ body {
     border-top: 2px dashed #ddd; /* Visual separator on screen only */
 }
 
+.letter-page .letter-kicker {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 15px;
+}
+
 .letter-page .letter-header {
     margin-bottom: 20px;
 }
