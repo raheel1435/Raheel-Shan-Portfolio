@@ -174,7 +174,35 @@ body {
     }
 }
 
-/*9. PRINT LAYOUT*/
+/*9. LETTER PAGE (Personal letter appended after the CV)*/
+.letter-page {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px dashed #ddd; /* Visual separator on screen only */
+}
+
+.letter-page .letter-header {
+    margin-bottom: 20px;
+}
+
+.letter-page .letter-header p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.letter-page h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #222;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+.letter-page p {
+    margin-bottom: 15px;
+}
+
+/*10. PRINT LAYOUT*/
 @media print {
     body {
         background: none; /* White background for print */
@@ -200,5 +228,12 @@ body {
 
     .download-btn-container {
         display: none; /* Completely hide download button when printing */
+    }
+
+    .letter-page {
+        page-break-before: always; /* Letter starts on its own printed page */
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
     }
 }
